@@ -8,8 +8,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 16px 100px;
+    height: 92px;
+    background-color: #1A0B2E;
 }
-.nav-links {
-    gap:32px;
+.nav-logo {
+    font-size: 32px;
+    font-weight: 800;
+    width: 219px;
+    color: #ffffff;
+    letter-spacing: -1px;
+}
+.wave{
+     background: linear-gradient(90deg, #FFB800 0%, #FF3399 50%, #9D00FF 100%);
+    
+    /* ২. ব্যাকগ্রাউন্ডকে টেক্সটের মাপে কেটে নেওয়া */
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.nav-links a {
+   gap: 32px;
 }
