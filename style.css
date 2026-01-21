@@ -109,15 +109,6 @@ body {
 
 
 
-.hero-img {
-    position: relative;
-   z-index: 2;  
-    text-align: center; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
 
 
 
@@ -223,7 +214,6 @@ display: none;
         padding: 15px 20px;
     }
 
-    
     .nav-links {
         display: none;
     }
@@ -236,12 +226,32 @@ display: none;
    
     .menu-icon {
         display: block;
+        cursor: pointer;
+        width: 24px;
+        height: auto;
     }
-    .menu-icon i {
-    color: white; 
-    font-size: 24px; 
+    .hero-subtitle {
+        font-size: 0.9rem; 
+        padding: 0 15px; 
+        line-height: 1.4;
+    }
+
+    
+    .hero-btn {
+        flex-direction: row; 
+        gap: 10px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-spotify, .hero-sub {
+        padding: 10px 20px; 
+        font-size: 0.85rem;
+    }
 }
-}
+    
+
 
 
 /* --- About Section Styles --- */
@@ -493,12 +503,12 @@ display: none;
     margin-bottom: 15px;
 }
 
-.thumbnail img {
+.thumbnail iframe {
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    object-fit: cover;
     display: block;
+    border: none;
 }
 
 
